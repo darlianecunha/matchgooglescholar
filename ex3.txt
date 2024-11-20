@@ -1,2 +1,1 @@
-pip show streamlit
-pip show scholarly
+brew install jpeg zlib
