@@ -51,12 +51,12 @@ st.title("Top Researchers by Research Area")
 
 # Input para a área de pesquisa
 research_area = st.text_input(
-    "Digite uma área de pesquisa (ex.: 'machine learning', 'carbon footprint','climate change'):",
+    "Enter a search area (e.g. 'machine learning', 'carbon footprint', 'climate change'):",
     placeholder="Digite aqui a área de pesquisa..."
 )
 
 # Busca dos resultados ao clicar no botão
-if st.button("Buscar"):
+if st.button("Search"):
     if research_area.strip():  # Valida o input
         with st.spinner("Seeking Researchers..."):
             researchers = fetch_top_researchers_by_area(research_area.strip())
