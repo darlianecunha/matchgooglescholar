@@ -1,2 +1,7 @@
-streamlit==1.26.0
-scholarly==1.4.4
+streamlit
+scholarly
+pillow==9.3.0  # Especifique uma versão estável
+bibtexparser
+free-proxy
+stem
+
