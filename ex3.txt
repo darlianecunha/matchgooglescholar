@@ -1,1 +1,1 @@
-brew install jpeg zlib
+streamlit run app.py
