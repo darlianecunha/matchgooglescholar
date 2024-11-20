@@ -1,0 +1,2 @@
+git commit -m "Atualizando dependências e corrigindo erros do Pillow"
+
