@@ -47,18 +47,18 @@ def fetch_top_researchers_by_area(research_area, max_results=20):
         return []
 
 # Interface do Streamlit
-st.title("Principais Pesquisadores por Área de Pesquisa")
+st.title("Top Researchers by Research Area")
 
 # Input para a área de pesquisa
 research_area = st.text_input(
-    "Digite uma área de pesquisa (ex.: 'machine learning', 'climate change'):",
+    "Digite uma área de pesquisa (ex.: 'machine learning', 'carbon footprint','climate change'):",
     placeholder="Digite aqui a área de pesquisa..."
 )
 
 # Busca dos resultados ao clicar no botão
 if st.button("Buscar"):
     if research_area.strip():  # Valida o input
-        with st.spinner("Buscando pesquisadores..."):
+        with st.spinner("Seeking Researchers..."):
             researchers = fetch_top_researchers_by_area(research_area.strip())
             
             if researchers:
